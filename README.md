@@ -3,8 +3,8 @@ Font-end Pattern Library
 
 A organised collection of front-end code patterns.
 
-==Available Patterns
+##Available Patterns
 
-==Patterns In Testing
+##Patterns In Testing
 
-==Patterns Under Review
+##Patterns Under Review
