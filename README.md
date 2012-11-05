@@ -8,3 +8,13 @@ A organised collection of front-end code patterns.
 ##Patterns In Testing
 
 ##Patterns Under Review
+
+##Proposed Patterns
+
+###Content
+* Simple tabs
+* Accordion 
+
+###Forms
+* Search input with icon and submit button
+* Custom select

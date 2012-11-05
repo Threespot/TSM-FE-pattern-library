@@ -2,4 +2,4 @@ Form Patterns
 =============
 
 ##Patterns
-*Icon Font Button
+* Icon Font Button
