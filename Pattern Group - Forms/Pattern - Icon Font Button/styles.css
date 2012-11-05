@@ -1,14 +1,13 @@
 
-@font-face {
-    font-family: 'entyporegular';
-    src: url('entypo-webfont.eot');
-    src: url('entypo-webfont.eot?#iefix') format('embedded-opentype'),
-         url('entypo-webfont.woff') format('woff'),
-         url('entypo-webfont.ttf') format('truetype'),
-         url('entypo-webfont.svg#entyporegular') format('svg');
-    font-weight: normal;
-    font-style: normal;
 
+@font-face {
+    font-family: "entypo";
+    font-style: normal;
+    font-weight: normal;
+    src: url("entypo.eot?#iefix") format("embedded-opentype"), 
+    	 url("entypo.woff") format("woff"), 
+    	 url("entypo.ttf") format("truetype"), 
+    	 url("entypo.svg#entypo") format("svg");
 }
 
 .buttons {
@@ -27,28 +26,43 @@ button {
     text-decoration: none !important;
 }
 
-.ui-button-default {
-    background-color: #E6E6E6;
-    background-image: -moz-linear-gradient(center top , #FFFFFF 0%, #E6E6E6 100%);
+.ui-button-default {    
     border: 1px solid #D1D1D1;
     color: #333333;
     text-shadow: 0 1px 1px #FFFFFF;
+    
+    background-color: #E6E6E6;
+	background: -moz-linear-gradient(top,  #ffffff 0%, #e6e6e6 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e6e6e6));
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#e6e6e6 100%);
+	background: -o-linear-gradient(top,  #ffffff 0%,#e6e6e6 100%);
+	background: -ms-linear-gradient(top,  #ffffff 0%,#e6e6e6 100%);
+	background: linear-gradient(to bottom,  #ffffff 0%,#e6e6e6 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e6e6e6',GradientType=0 );
+
 }
 
 .ui-button-default:hover {
-	background-color: #2E95FF;
-    background-image: -moz-linear-gradient(center top , #7ABCFF 0%, #2E95FF 100%);
     border: 1px solid #2E95FF;
     color: #FFFFFF;
     font-weight: normal;
     text-shadow: 0 -1px 1px rgba(34, 34, 34, 0.5);
+    
+    background-color: #2E95FF;
+	background: -moz-linear-gradient(top,  #7ABCFF 0%, #2E95FF 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7ABCFF), color-stop(100%,#2E95FF));
+	background: -webkit-linear-gradient(top,  #7ABCFF 0%,#2E95FF 100%);
+	background: -o-linear-gradient(top,  #7ABCFF 0%,#2E95FF 100%);
+	background: -ms-linear-gradient(top,  #7ABCFF 0%,#2E95FF 100%);
+	background: linear-gradient(to bottom,  #7ABCFF 0%,#2E95FF 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7ABCFF', endColorstr='#2E95FF',GradientType=0 );
 }
 
 .ui-corner-all {
     border-radius: 4px 4px 4px 4px;
 }
 
-[data-icon]:before {
+[data-icon]:before { 
 	font: 31px/26px "entypo";
 	content: attr(data-icon);
 	speak: none;
