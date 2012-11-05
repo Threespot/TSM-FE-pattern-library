@@ -7,9 +7,9 @@ A simple button that uses a gradient background, rounded corners, text shadow an
 Coming soon.
 
 ##Cross Browser Support
-*FF
-*Safari
-*Chrome
+* FF
+* Safari
+* Chrome
 
 ##Browser specific issues
 Currently has not icons in IE7. 
