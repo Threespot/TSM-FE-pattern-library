@@ -1,20 +1,18 @@
 Font-end Pattern Library
 =========================
 
-A organised collection of front-end code patterns.
+A organized collection of front-end code patterns. We host our [Sass patterns](https://github.com/Threespot/sass-patterns) separately.
 
-##Available Patterns
+## Available Patterns
+* [CSS Reset](css-reset/reset.css)
+* [Icon Font Button](icon-font-button/index.html)
 
-##Patterns In Testing
+## Patterns In Testing
 
-##Patterns Under Review
+## Patterns Under Review
 
-##Proposed Patterns
-
-###Content
-* Simple tabs
-* Accordion 
-
-###Forms
-* Search input with icon and submit button
+## Proposed Patterns
+* Accordion
 * Custom select
+* Search input with icon
+* Tabs
