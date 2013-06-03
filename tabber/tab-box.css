@@ -1,0 +1,161 @@
+body {
+    background: #eee;
+    color: #333;
+    font: 62.5% 'helvetica neue', arial, helvetica, sans-serif;
+    margin: 80px;
+}
+.group:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+div[role=contentinfo] {
+    border-top: 1px solid #585858;
+    margin-top: 10em;
+    padding-top: 0.5em;
+}
+
+h1 {
+    font-size: 1.6em;
+    font-weight: normal;
+    line-height: 1.125;
+    margin: 0;
+}
+h2,
+p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin: 0 0 1.5em;
+}
+.toc {
+    list-style: none;
+    padding-top: 1.5em;
+}
+.toc li { padding-bottom: 25px; }
+
+a {
+    color: #009;
+    color: rgba(0,0,255,0.8);
+    text-decoration: none;
+}
+a:hover,
+a:focus {
+    text-decoration: underline;
+}
+
+.btn {
+    background: #efefef;
+    border: 1px solid #ccc;
+    color: #000;
+    color: rgba(0,0,0,.75);
+    font-size: 1.2em;
+    margin-right: 5px;
+    padding: 5px 10px;
+    text-decoration: none;
+    -webkit-transition: background-color 0.4s linear;
+}
+.btn:hover,
+.btn:focus {
+    background-color: #adadad;
+    border: 1px solid #ccc;
+}
+.related-links {
+    font-size: 1.2em;
+    list-style: none;
+    margin-bottom: 2em;
+}
+.related-links li:before { content: '« '; }
+
+
+
+/* TABS */
+.selected {
+    background: #fff;
+}
+
+[role=tablist] {
+    font-size: 1.4em;
+    list-style: none;
+    margin: 0 0 1em;
+    padding: 0;
+}
+
+.js [role="tablist"] {
+    margin-bottom: 0;
+}
+
+[role="tab"] {
+    display: inline-block;
+    font-size: 1.4em;
+    line-height: 1.285714;
+    margin: 0;
+    padding: 5px 20px 5px 0;
+}
+
+.js [role=tab] {
+    display: block;
+    float: left;
+    font-size: 1.25em;
+    line-height: 1.285714;
+    padding: 5px 10px;
+}
+
+[role=tab] a {
+    color: #009;
+    color: rgba(0,0,255,0.8);
+}
+
+.js [role=tab] a {
+    display: block;
+}
+
+[role=tab] a:hover,
+[role=tab] a:focus {
+    color: #c60;
+    text-decoration: none;
+}
+
+
+.js [role=tab].selected a,
+.js [role=tab].selected a:hover,
+.js [role=tab].selected a:focus,
+.js [role=tab].selected a:visited {
+    color: #c60;
+}
+
+
+/* Script-enabled Version */
+.js [role=tabpanel] h1 {
+    display: none;
+}
+
+[role=tabpanel] h2,
+[role=tabpanel] p {
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+[role=tabpanel] h2 { margin: 0.5em 0 0; }
+
+[role="tabpanel"] {
+    margin-bottom: 1em;
+    padding: 1em 0 0.5em;
+}
+
+[role="tabpanel"]:target {
+    background: #fff;
+    margin-left: -1em;
+    margin-right: -1em;
+    padding: 1em 1em 0.5em;
+}
+
+.js [role=tabpanel] {
+    display: none;
+}
+.js [role=tabpanel].selected {
+    display: block;
+    padding: 10px;
+}

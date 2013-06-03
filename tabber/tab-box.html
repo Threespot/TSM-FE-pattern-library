@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Tabbed Content Prototype</title>
+    
+    <link rel="stylesheet" href="tab-box.css" />
+</head>
+
+<body>
+
+    <div role="main">
+        <h1>Tabbed Content: In-page Switching</h1>
+        <p>This examples shows content tab switching that does not require a page refresh.</p>
+        
+        
+        <div class="tabber">
+        <!--
+        tablist
+            tab
+                aria-controls
+                aria-selected
+        tabpanel
+            aria-labelledby
+            aria-hidden (true|false)
+        http://oaa-accessibility.org/example/34/
+        -->
+            <ol role="tablist" class="tabs group">
+                <li id="tab1" role="tab" aria-controls="panel1"><a href="#panel1">Tab 1</a></li>
+                <li id="tab2" role="tab" aria-controls="panel2"><a href="#panel2">Tab 2</a></li>
+            </ol>
+            
+            <div id="panel1" role="tabpanel" aria-labelledby="tab1">
+                <h1>Tab Name 1</h1>
+                <h2>Header 1</h2>
+                <p>Pellentesque nibh felis, eleifend id, commodo in, interdum vitae, leo. Praesent eu elit. Ut eu ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Maecenas elementum augue nec nisl. Proin auctor lorem at nibh. Curabitur nulla purus, feugiat id, elementum in, <a href="#">lobortis quis</a>, pede. Vivamus sodales adipiscing sapien. Vestibulum posuere nulla eget wisi. Integer volutpat ligula eget enim. Suspendisse vitae arcu. Quisque pellentesque. Nullam consequat, sem vitae rhoncus tristique, mauris nulla fermentum est, bibendum ullamcorper sapien magna et quam. Sed dapibus vehicula odio. Proin bibendum gravida nisl. Fusce lorem. Phasellus sagittis, nulla in hendrerit laoreet, libero lacus feugiat urna, eget hendrerit pede magna vitae lorem. Praesent mauris.</p>
+            </div>
+            
+            <div id="panel2" role="tabpanel" aria-labelledby="tab2">
+                <h1>Tab Name 2</h1>
+                <h2>Header 2</h2>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis. Nullam sit amet enim. Suspendisse id velit vitae ligula volutpat condimentum. Aliquam erat volutpat. Sed quis velit. Nulla facilisi. Nulla libero. Vivamus pharetra posuere sapien. Nam consectetuer. Sed aliquam, nunc eget euismod ullamcorper, lectus nunc ullamcorper orci, fermentum bibendum enim nibh eget ipsum. Donec porttitor ligula eu dolor. Maecenas vitae nulla consequat libero cursus venenatis. Nam magna enim, accumsan eu, blandit sed, blandit a, eros.</p>
+            </div>
+            
+        </div>
+    
+    </div>
+
+    <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+    <script src="tab-box.js"></script>
+</body>
+</html>
