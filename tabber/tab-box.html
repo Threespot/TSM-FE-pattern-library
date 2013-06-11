@@ -2,18 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <title>Tabbed Content Prototype</title>
+    <title>Tabbed Content Prototype | FED Patterns</title>
     
+    <link rel="stylesheet" href="/_assets/css/normalize.css" />
+    <link rel="stylesheet" href="/_assets/css/base.css" />
     <link rel="stylesheet" href="tab-box.css" />
 </head>
 
 <body>
-
-    <div role="main">
+    
+    <div role="banner">
         <h1>Tabbed Content: In-page Switching</h1>
         <p>This examples shows content tab switching that does not require a page refresh.</p>
-        
-        
+    </div>
+    
+    <div role="main">
         <div class="tabber">
         <!--
         tablist
@@ -43,10 +46,9 @@
             </div>
             
         </div>
-    
     </div>
-
-    <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     <script src="tab-box.js"></script>
 </body>
 </html>
