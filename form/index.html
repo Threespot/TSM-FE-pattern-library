@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Sample Form | FED Patterns</title>
+	
+	<meta name="viewport" content="width=device-width" />
+	
+	<link rel="stylesheet" href="/_assets/css/normalize.css" />
+	<link rel="stylesheet" href="/_assets/css/base.css" />
+	<link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+	
+	<h1>Your Profile</h1>
+	
+	<form action="#" method="get" class="adjacent">
+		
+		<fieldset>
+			<dl class="group">
+				<dt><label for="name">Name</label></dt>
+				<dd><input name="name" id="name" type="text" placeholder="Tell us your name"></dd>
+			</dl>
+		</fieldset>
+		
+		<fieldset>
+			<dl class="group">
+				<dt>
+					<label for="pswd">Password</label>
+					<span class="instruction">Passwords must be at least 8 characters long.</span>
+				</dt>
+				<dd><input name="pswd" id="pswd" type="password" placeholder="Choose a strong password"></dd>
+			</dl>
+		</fieldset>
+		
+		<fieldset>
+			<dl class="group">
+				<dt>
+					<label for="description">Description</label>
+					<span class="instruction">This description will display on your profile.</span>
+				</dt>
+				<dd><textarea id="description" name="description" rows="5" cols="30" placeholder="Tell us a little something about yourself."></textarea></dd>
+			</dl>
+		</fieldset>
+		
+		<fieldset>
+			<dl class="group">
+				<dt><span class="pseudo-label">Gender</span></dt>
+				<dd>
+					<ul>
+						<li class="container-radio"><input name="gender" id="gender-male" type="radio" value="male"> <label for="gender-male">Male</label></li>
+						<li class="container-radio"><input name="gender" id="gender-female" type="radio" value="female"> <label for="gender-female">Female</label></li>
+					</ul>
+				</dd>
+			</dl>
+		</fieldset>
+		
+		<fieldset>
+			<dl class="group">
+				<dt><span class="pseudo-label">Favorite Colors</span></dt>
+				<dd>
+					<ul>
+						<li class="container-checkbox"><input name="color" id="color-red" type="checkbox" value="red"> <label for="color-red">Red</label></li>
+						<li class="container-checkbox"><input name="color" id="color-blue" type="checkbox" value="blue"> <label for="color-blue">Blue</label></li>
+						<li class="container-checkbox"><input name="color" id="color-green" type="checkbox" value="green"> <label for="color-green">Green</label></li>
+						<li class="container-checkbox"><input name="color" id="color-yellow" type="checkbox" value="yellow"> <label for="color-yellow">Yellow</label></li>
+					</ul>
+				</dd>
+			</dl>
+		</fieldset>
+		
+		<fieldset>
+			<dl class="group">
+				<dt><label for="state-province">State or Province</label></dt>
+				<dd>
+					<select id="state-province" name="state-province">
+						<option value="--">Select a State or Province</option>
+						<optgroup label="Canada">
+							<option>Alberta</option>
+							<option>British Columbia</option>
+							<option>Quebec</option>
+							<option>Ontario</option>
+							<option>&hellip;</option>
+						</optgroup>
+						<optgroup label="United States">
+							<option>Alabama</option>
+							<option>Alaska</option>
+							<option>Arkansas</option>
+							<option>Arizona</option>
+							<option>&hellip;</option>
+						</optgroup>
+					</select>
+				</dd>
+			</dl>
+		</fieldset>
+		
+		<div class="actions">
+			<input name="submit" id="submit" type="submit" value="Submit">
+		</div>
+	
+	</form>
+	<script src="/_assets/js/lib/jquery.js"></script>
+	<script src="form.js"></script>
+</body>
+</html>

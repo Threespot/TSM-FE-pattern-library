@@ -1,0 +1,110 @@
+body {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 600px;
+	width: 80%;
+}
+
+.btn-toggle {
+    float: right;
+    margin-top: -3.5em;
+}
+
+.instruction {
+	color: #999;
+	display: block;
+	font-size: 0.9em;
+	line-height: 1.2;
+	padding-top: 3px;
+}
+
+.actions {
+	border-top: 3px solid #ccc;
+	margin-top: 2em;
+	padding-top: 2em;
+}
+
+fieldset {
+    border: 0;
+    border-top: 1px dotted #ccc;
+    margin-top: 2em;
+    padding: 2em 0 0;
+}
+
+fieldset:first-child {
+    border-top-style: solid;
+    margin-top: 0;
+}
+
+fieldset ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+label { cursor: pointer; }
+
+label,
+.pseudo-label,
+input,
+select,
+textarea {
+	font-size: 100%;
+	vertical-align: middle;
+}
+
+input[type=text],
+input[type=password],
+textarea,
+select {
+	border: 1px solid #999;
+	padding: 2px;
+	width: 80%;
+}
+input[type=text]:focus,
+input[type=password]:focus,
+textarea:focus,
+select:focus {
+	border: 1px solid #333;
+}
+
+input[type=submit] {
+	background: #ccc;
+	border: 1px solid #999;
+	padding: 5px;
+}
+input[type=submit]:hover,
+input[type=submit]:focus {
+	background: #333;
+	color: #fff;
+	cursor: pointer;
+}
+
+dt label,
+dt .pseudo-label {
+    font-weight: bold;
+}
+
+form dl { margin: 0; }
+form dt,
+form dd {
+    float: none;
+    width: auto;
+}
+form dt {
+    margin-bottom: 0.5em;
+}
+form dd {
+    margin-left: 0;
+}
+
+.adjacent dt {
+	float: left;
+	margin-right: 5%;
+	width: 25%;
+}
+.adjacent dd {
+	float: left;
+	width: 70%;
+}

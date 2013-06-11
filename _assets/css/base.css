@@ -1,8 +1,80 @@
-body {
-	padding: 50px;
+html {
+    font: 62.5%/1.5 helmet, freesans, sans-serif;
 }
 
-.page-title {
-	font: 21px/26px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-	margin-bottom: 36px;
+body {
+    background: #fff;
+    color: #333;
+    font-size: 12px;
+    font-size: 1.2rem;
+    padding: 2em;
+}
+
+
+
+/* Links */
+a {
+    color: #121774;
+    text-decoration: underline;
+}
+a:hover,
+a:focus {
+    color: #127474;
+    text-decoration: none;
+}
+
+
+
+/* Forms */
+::-webkit-input-placeholder {
+  color: #999;
+}
+:-moz-placeholder {
+  color: #999;
+}
+
+
+
+/* Banner */
+[role="banner"] {
+    border-bottom: 1px solid #666;
+    margin-bottom: 3em;
+    padding-bottom: 0.5em;
+}
+[role="banner"] h1 {
+    line-height: 1;
+    margin: 0;
+}
+[role="banner"] p {
+    margin-bottom: 0;
+}
+
+
+
+/* Footer */
+[role="contentinfo"] {
+    border-top: 1px solid #ccc;
+    margin-top: 3em;
+    padding-top: 1em;
+}
+[role="contentinfo"] p {
+    color: #999;
+    font-size: 1.1em;
+    line-height: 1.2;
+    margin: 0;
+}
+[role="contentinfo"] a,
+[role="contentinfo"] a:visited {
+    color: #999;
+}
+
+
+
+/* Float clearing */
+.group:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
 }

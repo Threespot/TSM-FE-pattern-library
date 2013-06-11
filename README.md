@@ -5,6 +5,7 @@ A organized collection of front-end code patterns. We host our [Sass patterns](h
 
 ## Available Patterns
 * [CSS Reset](css-reset/reset.css)
+* [Form Structure](form/index.html)
 * [Icon Font Button](icon-font-button/index.html)
 * [Tabbed Interface](tabber/tab-box.html)
 
