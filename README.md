@@ -11,6 +11,8 @@ A organized collection of front-end code patterns. We host our [Sass patterns](h
 
 ## Patterns In Testing
 
+* [FED Checklist](checklist/readme.md)
+
 ## Patterns Under Review
 
 ## Proposed Patterns
