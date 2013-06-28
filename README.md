@@ -15,6 +15,8 @@ A organized collection of front-end code patterns. We host our [Sass patterns](h
 
 ## Patterns Under Review
 
+* [Input Group](input-group/readme.md)
+
 ## Proposed Patterns
 * Accordion
 * Custom select
