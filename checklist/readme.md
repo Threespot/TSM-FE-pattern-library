@@ -20,11 +20,7 @@ This checklist assumes that you have **[validated your HTML](http://validator.w3
 - Consider adding title attributes where helpful/appropriate
 - Structure H1-H6 headings (outlining your content)
 	- [Chrome Extension: HTML5 Outliner](https://chrome.google.com/webstore/detail/html5-outliner/afoibpobokebhgfnknfndkgemglggomo)
-- Include Meta Tags:
-  - `<meta charset="utf-8">`
-  - `<meta http-equiv="X-UA-Compatible" content="IE=edge">` (Do **not** include `chrome=1`)
-  - `<meta name="apple-mobile-web-app-title" content="Site Name">` (for iOS bookmarking)
-  - `<meta name="application-name" content="Site Name">` (for Win8 Metro bookmarks)
+- Do **not** include `chrome=1` in the tag `<meta http-equiv="X-UA-Compatible" content="IE=edge">`
 - Include Favicons
 	- [Threespot Wiki: Favicons](http://apps.threespot.com/wiki/index.php/Favicons)
 
@@ -43,7 +39,6 @@ This checklist assumes that you have **[validated your HTML](http://validator.w3
 ### JavaScript
 
 - No-js alternatives for interactive features
-- Strict mode
 - Consider CDN's to replace local libraries
 	- [Google's Hosted Libraries](https://developers.google.com/speed/libraries/)
 - Consider jQuery alternatives
@@ -110,8 +105,8 @@ The important thing to remember is that the items on this list should be the thi
 
 - **Not** be specific to a particular tool or technology. 
 
-	> Example: "Add `og:title, og:description og:url og:type` for Facebook"
+	> Example: "Check the Twitter UI Documentation for design compliance"
 	
-	If someone is embracing a specific technology, they are responsible for testing for it's ramifications. Let's not put a bunch of edge-case fixes in here.
+	If someone is embracing a specific technology, they are responsible for testingit and for it's ramifications. Let's not put a bunch of edge-case fixes in here.
 	
 - Include links to helpful tools and articles when appropriate and available.
