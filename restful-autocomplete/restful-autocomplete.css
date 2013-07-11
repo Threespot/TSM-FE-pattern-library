@@ -1,0 +1,43 @@
+.autocompleter {
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding: 10px;
+	position: relative;
+	width: 250px;
+}
+
+.autocompleter input {
+	margin: 0 0 10px;
+}
+
+.autocompleter .close {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+
+.autocompleter .status {
+	margin: 0;
+	padding: 0;
+}
+
+.autocompleter .options {
+	max-height: 95px;
+	margin: 0;
+	overflow: auto;
+	padding: 0;
+	position: relative;
+}
+
+.autocompleter li {
+	cursor: default;
+	padding: 4px 8px;
+}
+
+.autocompleter li:hover {
+	background-color: #eee;
+}
+
+.autocompleter li.selected {
+	background-color: #ccc;
+}

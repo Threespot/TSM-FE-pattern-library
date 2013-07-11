@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--[if lte IE 7]><html class="lt-ie8 lt-ie9 lt-ie10" lang="en"><![endif]-->
+<!--[if IE 8]><html class="lt-ie9 lt-ie10" lang="en"><![endif]-->
+<!--[if IE 9]><html class="lt-ie10" lang="en"><![endif]-->
+<!--[if gt IE 9]><!--><html lang="en"><!--<![endif]-->
+<head>
+	<meta charset="UTF-8" />
+	<title>RESTful Auto-Complete | FED Patterns</title>
+	
+	<link rel="stylesheet" href="../_assets/css/normalize.css" />
+	<link rel="stylesheet" href="../_assets/css/base.css" />
+	<link rel="stylesheet" href="restful-autocomplete.css" />
+</head>
+
+<body>
+	<i>View this demo in MAMP for a working example.</i>
+	
+	<p>Click to make a selection:</p>
+	<p><input type="text" readonly="readonly" class="js-selectfield"></p>
+	
+	<div id="restful-autocompleter" class="autocompleter">
+		<button class="close js-close">x</button>
+		<input name="search" type="text" autocomplete="off">
+		<p class="status js-status"></p>
+		<ul class="options js-options"></ul>
+	</div>
+
+<script src="../_assets/js/jquery.js"></script>
+<script src="../_assets/js/underscore.js"></script>
+<script src="../_assets/js/backbone.js"></script>
+<script src="restful-autocomplete.js"></script>
+<script>
+
+var autocompleter = new AutoCompleter({el:'#restful-autocompleter'});
+var selectfield = $('.js-selectfield').click(function() {
+	autocompleter.open();
+});
+
+autocompleter.on('select', function(model) {
+	selectfield.val(model.get('name'));
+	autocompleter.close();
+});
+
+</script>
+</body>
+</html>
+
+
