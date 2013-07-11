@@ -1,4 +1,4 @@
-Font-end Pattern Library
+Front-end Pattern Library
 =========================
 
 A organized collection of front-end code patterns. We host our [Sass patterns](https://github.com/Threespot/sass-patterns) separately.
