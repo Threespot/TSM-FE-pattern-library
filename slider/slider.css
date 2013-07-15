@@ -1,0 +1,79 @@
+label {
+	display: block;
+	margin-top: 50px;
+}
+
+.slider {
+	background-color: #3f3f3f;
+	border: 7px solid #fff; /* << to increase hit-area */
+	border-left: none;
+	border-right: none;
+	cursor: move;
+	height: 10px;
+	-ms-touch-action: none;
+	position: relative;
+	width: 500px;
+}
+
+.slider .range,
+.slider .range-value,
+.slider .range-max,
+.slider .range-min {
+	display: block;
+	position: absolute;
+}
+
+	
+.slider .range {
+	background-color: #999;
+	height: 8px;
+	margin: 1px 0;
+}
+
+.slider.range-bottom .range {
+    background-color: #1E7F9C;
+	left: 0;
+}
+
+.slider.range-top .range {
+    background-color: #d85830;
+	right: 0;
+}
+
+.slider .range-value,
+.slider .range-max {
+    text-align: right;
+}
+
+.slider .range-value {
+    color: #ccc;
+    font-size: 24px;
+    right: 0;
+    top: -1.75em;
+}
+
+.slider .range-max,
+.slider .range-min {
+    bottom: -2em;
+    font-size: 14px;
+}
+
+.slider .range-max {
+    right: 0;
+}
+
+.slider .range-min {
+    left: 0;
+}
+
+.slider .handle {
+	background-color: #ccc;
+	border-radius: 10px;
+	cursor: cursor;
+	display: block;
+	height: 1.5em;
+	position: absolute;
+	top: -0.5em;
+	width: 0.75em;
+	z-index: 1;
+}

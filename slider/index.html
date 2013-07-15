@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!--[if lte IE 7]><html class="lt-ie8 lt-ie9 lt-ie10" lang="en"><![endif]-->
+<!--[if IE 8]><html class="lt-ie9 lt-ie10" lang="en"><![endif]-->
+<!--[if IE 9]><html class="lt-ie10" lang="en"><![endif]-->
+<!--[if gt IE 9]><!--><html lang="en"><!--<![endif]-->
+<head>
+	<meta charset="UTF-8" />
+	<title>Sliders</title>
+	
+	<link rel="stylesheet" href="../_assets/css/normalize.css" />
+	<link rel="stylesheet" href="../_assets/css/base.css" />
+	<link rel="stylesheet" href="slider.css" />
+</head>
+
+<body>
+	<h1>Sliders</h1>
+	
+	<label for="input-bottom">Annual Net Price:</label>
+	<div class="slider range-bottom" id="slider-bottom" data-min="0" data-max="100">
+        <input id="input-bottom" type="hidden" name="net_price__lte" value="50">
+        <span class="range"></span>
+        <span class="handle"></span>
+        <span class="range-value"></span>
+        <span class="range-max">100</span>
+        <span class="range-min">0</span>
+    </div>
+
+	<label for="input-top">Annual Net Price:</label>
+	<div class="slider range-top" id="slider-top" data-min="0" data-max="100">
+        <input id="input-top" type="hidden" name="net_price__lte" value="50">
+        <span class="range"></span>
+        <span class="handle"></span>
+        <span class="range-value"></span>
+        <span class="range-max">100</span>
+        <span class="range-min">0</span>
+    </div>
+	
+	<label for="input-value">Annual Net Price:</label>
+	<div class="slider" id="slider-value" data-min="0" data-max="100">
+        <input id="input-value" type="hidden" name="net_price__lte" value="50">
+        <span class="handle"></span>
+        <span class="range-value"></span>
+        <span class="range-max">100</span>
+        <span class="range-min">0</span>
+    </div>
+
+<script src="../_assets/js/jquery.js"></script>
+<script src="slider.js"></script>
+<script>
+
+var slider1 = new SliderView({
+	el: '#slider-bottom'
+});
+
+var slider2 = new SliderView({
+	el: '#slider-top'
+});
+
+var slider3 = new SliderView({
+	el: '#slider-value'
+});
+
+</script>
+</body>
+</html>
+
+
