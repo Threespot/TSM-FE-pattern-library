@@ -29,15 +29,24 @@
 <script src="../_assets/js/underscore.js"></script>
 <script src="../_assets/js/backbone.js"></script>
 <script src="restful-autocomplete.js"></script>
+<script src="clickoff.js"></script>
 <script>
 
 var autocompleter = new AutoCompleter({el:'#restful-autocompleter'});
-var selectfield = $('.js-selectfield').click(function() {
-	autocompleter.open();
+
+var toggle = new Toggle({
+	$el: $('.js-selectfield'), // Element to target.
+	$panel: autocompleter.$el, // Toggling panel to bind.
+	open: function() {
+		autocompleter.open();
+	},
+	close: function() {
+		autocompleter.close();
+	}
 });
 
 autocompleter.on('select', function(model) {
-	selectfield.val(model.get('name'));
+	toggle.$el.val(model.get('name'));
 	autocompleter.close();
 });
 
