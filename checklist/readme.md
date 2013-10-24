@@ -2,14 +2,14 @@
 
 This list is meant to assist front-end engineers identify and evaluate aspects of a site that often go overlooked or do not directly affect the end user's experience.
 
-This list is **not** meant to function as a guide to building a website. It assumes that readers understand how to craft quality front-end code and are familiar with best practices. Additions to this list should follow it's authoring guidelines (see below). 
+This list is **not** meant to function as a guide to building a website. It assumes that readers understand how to craft quality front-end code and are familiar with best practices. Additions to this list should follow its authoring guidelines (see below). 
 
 This checklist assumes that you have **[validated your HTML](http://validator.w3.org/#validate_by_input)** and **[linted your JavaScript](http://www.jslint.com)**.
 
 ## Checklist
 
 ### HTML
-- Include Wai Aria Roles 
+- Include WAI-ARIA Roles 
 	- [`banner`](http://www.w3.org/TR/2011/CR-wai-aria-20110118/roles#banner)
 	- [`navigation`](http://www.w3.org/TR/2011/CR-wai-aria-20110118/roles#navigation)
 	- [`search`](http://www.w3.org/TR/2011/CR-wai-aria-20110118/roles#search)
@@ -39,7 +39,7 @@ This checklist assumes that you have **[validated your HTML](http://validator.w3
 ### JavaScript
 
 - No-js alternatives for interactive features
-- Consider CDN's to replace local libraries
+- Consider CDNs to replace local libraries
 	- [Google's Hosted Libraries](https://developers.google.com/speed/libraries/)
 - Consider jQuery alternatives
 	- [Zepto](http://zeptojs.com)
@@ -107,6 +107,6 @@ The important thing to remember is that the items on this list should be the thi
 
 	> Example: "Check the Twitter UI Documentation for design compliance"
 	
-	If someone is embracing a specific technology, they are responsible for testingit and for it's ramifications. Let's not put a bunch of edge-case fixes in here.
+	If someone is embracing a specific technology, they are responsible for testingit and for its ramifications. Let's not put a bunch of edge-case fixes in here.
 	
 - Include links to helpful tools and articles when appropriate and available.
